@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-con">
+        <div class="left">
+            <div class="logo-place">
+                <img class="logo" src="odin-logo.png" alt="simple odin progect logo">
+                <span class="logo-text">ODIN</span>
+            </div>
+            <small class="left-footer">
+                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </small>
+        </div>
+        <div class="right">
+            <form action="example/path" method="post">
+                <fieldset class="right-top">
+                    <div>
+                        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                        <p>You <em>know</em> you want to.</p>
+                    </div>
+                </fieldset>
+                <fieldset class="form-main">
+
+                    <legend>Let's do this!</legend>
+
+                    <label for="first-name">
+                        <span class="label-text">FIRST NAME</span>
+                        <input type="text" name="first-name" id="first-name">
+                    </label>
+                    
+                    <label for="last-name">
+                        <span class="label-text">LAST NAME</span>
+                        <input type="text" name="last-name" id="last-name">
+                    </label>
+
+                    <label for="email">
+                        <span class="label-text">EMAIL</span>
+                        <input type="email" name="email" id="email">
+                    </label>
+
+                    <label for="phone">
+                        <span class="label-text">PHONE NUMBER</span>
+                        <input type="number" name="phone" id="phone">
+                    </label>
+
+                    <label for="password">
+                        <span class="label-text">PASSWORD</span>
+                        <input type="password" name="password" id="password" minlength="8">
+                    </label>
+
+                    <label for="confirm">
+                        <span class="label-text">CONFIRM PASSWORD</span>
+                        <input type="password" name="confirm-password" id="confirm" minlength="8">
+                    </label>
+
+                </fieldset>
+                <fieldset class="form-end">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <span class="log-in">Log in</span></p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

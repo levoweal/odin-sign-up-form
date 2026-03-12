@@ -1,0 +1,215 @@
+* {
+    font-family: "Roboto" 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.woff2') format('woff2'),
+        url('Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top-con {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-image: url('background-image.jpg');
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.logo-place {
+    --logo-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(var(--logo-height) *1.2);
+    padding: 0 calc(var(--logo-height) * 0.1);
+
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 20%;
+}
+
+.logo {
+    height: var(--logo-height);
+    width: auto;
+}
+
+.logo-text {
+    color: white;
+    font-family: Norse, Roboto, sans-serif;
+    font-size: calc(var(--logo-height) * 0.8);
+    white-space: nowrap;
+}
+
+.left-footer {
+    padding: 0 0 20px;
+    color: white;
+    opacity: 0.7;
+    align-self: center;
+}
+
+.left-footer a {
+    color: inherit;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2% 20% 3% 0;
+    background-color: rgb(247, 247, 247);
+}
+
+.right-top p {
+    margin: 0 20px 20px 40px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset.form-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: calc(2% + 22px) 20% 3% 0;
+    box-shadow: 2px 4px 8px rgb(207, 207, 207);
+    z-index: 1;
+}
+
+.form-main legend {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    font-size: x-large;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    color: rgb(56, 56, 56);
+}
+
+label {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+    margin: 30px 0 0;
+}
+
+.label-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(80, 80, 80);
+    font-family: Roboto, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.form-end {
+    flex: 1;
+    padding: 2% 20% 3% 0;
+    background-color: rgb(247, 247, 247);
+}
+
+.form-end button, p {
+    margin: 20px 0 0 40px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 8px rgb(175, 175, 175);
+}
+
+fieldset {
+    border: none;
+    position: relative;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    background-color: rgb(253, 253, 253);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #6e99ee;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgb(214, 214, 214);
+}
+
+input:invalid {
+    border: 2px solid rgb(255, 111, 111);
+    border-radius: 4px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    background-color: #596D48;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+}
+
+.form-end p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.log-in {
+    color:#596D48;
+    font-weight: 600;
+}
+
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
